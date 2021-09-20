@@ -18,9 +18,6 @@ namespace AbstractFactory
             ContinentFactory america = new AmericaFactory();
             world = new AnimalWorld(america);
             world.RunFoodChain();
-
-            // Wait for user input
-            Console.ReadKey();
             #endregion
 
 
@@ -47,9 +44,8 @@ namespace AbstractFactory
             var sedan = bmwFactory.Sedan();
             sedan.Start();
             sedan.Stop();
-
-            Console.ReadKey();
             #endregion
+            Console.ReadKey();
         }
     }
 }
